@@ -19,3 +19,17 @@ function setBalance(value){
     const balanceElement = document.getElementById('balance');
     balanceElement.innerText = value;
 }
+
+// machine id > hide all > show id
+function showOnly(id){
+   const addMoney = document.getElementById('add-money'); 
+   const cashOut = document.getElementById('cashout');
+    // console.log(`add money- ${addMoney} , cashout  - ${cashOut}`); 
+    //sobai ka hide kore dao
+    addMoney.classList.add('hidden');
+    cashOut.classList.add('hidden');
+
+    // id wala element ta ke tmi show koro
+    const selected = document.getElementById(id);
+    selected.classList.remove('hidden');
+}
