@@ -24,10 +24,12 @@ function setBalance(value){
 function showOnly(id){
    const addMoney = document.getElementById('add-money'); 
    const cashOut = document.getElementById('cashout');
+   const history = document.getElementById('history');
     // console.log(`add money- ${addMoney} , cashout  - ${cashOut}`); 
     //sobai ka hide kore dao
     addMoney.classList.add('hidden');
     cashOut.classList.add('hidden');
+    history.classList.add('hidden');
 
     // id wala element ta ke tmi show koro
     const selected = document.getElementById(id);
